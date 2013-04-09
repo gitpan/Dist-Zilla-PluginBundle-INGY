@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::INGY;
 {
-  $Dist::Zilla::PluginBundle::INGY::VERSION = '0.001';
+  $Dist::Zilla::PluginBundle::INGY::VERSION = '0.0.3';
 }
 
 use Moose;

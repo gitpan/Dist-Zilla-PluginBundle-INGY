@@ -65,7 +65,7 @@
          "web" : "https://github.com/ingydotnet/dist-zilla-pluginbundle-ingy-pm"
       }
    },
-   "version" : "0.001",
+   "version" : "0.0.3",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.014002"
