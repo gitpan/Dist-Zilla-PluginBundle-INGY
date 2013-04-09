@@ -25,9 +25,8 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::CheckExtraTests" => 0,
     "Dist::Zilla::Plugin::CheckPrereqsIndexed" => 0,
     "Dist::Zilla::Plugin::GithubMeta" => "0.12",
-    "Dist::Zilla::Plugin::PodWeaver" => "3.092971",
+    "Dist::Zilla::Plugin::ReadmeFromPod" => 0,
     "Dist::Zilla::Plugin::ReportVersions::Tiny" => 0,
-    "Dist::Zilla::Plugin::TaskWeaver" => "0.093330",
     "Dist::Zilla::Plugin::Test::ChangesHasContent" => 0,
     "Dist::Zilla::Plugin::Test::Compile" => 0,
     "Dist::Zilla::PluginBundle::Basic" => 0,
@@ -37,18 +36,16 @@ my %WriteMakefileArgs = (
     "Moose" => 0,
     "Moose::Autobox" => 0,
     "Pod::Elemental" => "0.092970",
-    "Pod::Elemental::Transformer::List" => 0,
-    "Pod::Weaver" => "3.100310",
-    "Pod::Weaver::Config::Assembler" => 0,
-    "strict" => 0,
-    "warnings" => 0
+    "Pod::Elemental::Transformer::List" => 0
   },
   "TEST_REQUIRES" => {
     "File::Find" => 0,
     "File::Temp" => 0,
-    "Test::More" => "0.96"
+    "Test::More" => "0.96",
+    "strict" => 0,
+    "warnings" => 0
   },
-  "VERSION" => "0.0.2",
+  "VERSION" => "0.001",
   "test" => {
     "TESTS" => "t/*.t"
   }
