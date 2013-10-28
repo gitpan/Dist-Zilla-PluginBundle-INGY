@@ -1,12 +1,13 @@
 package Dist::Zilla::PluginBundle::INGY;
 {
-  $Dist::Zilla::PluginBundle::INGY::VERSION = '0.0.3';
+  $Dist::Zilla::PluginBundle::INGY::VERSION = '0.0.4';
 }
 
 use Moose;
 use Moose::Autobox;
 use Dist::Zilla 2.100922; # TestRelease
 with 'Dist::Zilla::Role::PluginBundle::Easy';
+with 'Dist::Zilla::Role::PluginBundle::Config::Slicer';
 
 
 use Dist::Zilla::PluginBundle::Basic;
@@ -69,7 +70,7 @@ sub configure {
     } else {
       $self->add_plugins([
         'Git::NextVersion' => {
-          version_regexp => '^([0-9]+\.[0-9]+)$',
+          version_regexp => '^([0-9]+\.[0-9]+(?:\.[0-9]+)?)$',
         }
       ]);
     }
