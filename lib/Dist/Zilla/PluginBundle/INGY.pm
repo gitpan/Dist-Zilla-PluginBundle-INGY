@@ -1,7 +1,4 @@
 package Dist::Zilla::PluginBundle::INGY;
-{
-  $Dist::Zilla::PluginBundle::INGY::VERSION = '0.0.4';
-}
 
 use Moose;
 use Moose::Autobox;
@@ -78,7 +75,7 @@ sub configure {
 
   $self->add_plugins(qw(
     ReadmeFromPod
-    PkgVersion
+    OurPkgVersion
     MetaConfig
     MetaJSON
     NextRelease
@@ -88,7 +85,7 @@ sub configure {
   qw(
     PodSyntaxTests
     Test::Compile
-    ReportVersions::Tiny
+    Test::ReportPrereqs
   ));
 
   $self->add_plugins(
